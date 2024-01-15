@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop Watch</title>
+    <link rel="icon" href="Screenshot (6).png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="stopwatch">
         <div id="timer">
-            <div class="hr">000</div>
-            <p>hr.</p>
-            <div class="min">000</div>
-            <p>min.</p>
-            <div class="sec">000</div>
-            <p>sec.</p>
-            <div class="milisec">000</div>
+            <div class="hr">00</div>
+            <p>Hr.</p>
+            <div class="min">00</div>
+            <p>Min.</p>
+            <div class="sec">00</div>
+            <p>Sec.</p>
+            <div class="milisec">00</div>
         </div>
         <div id="buttons">
-            <button class="start">START</button>
-            <button class="stop">STOP</button>
-            <button class="reset">RESET</button>
+            <button onclick="start()" class="start">START</button>
+
+            <button onclick="stop()" class="stop">STOP</button>
+
+            <button onclick="reset()" class="reset">RESET</button>
         </div>
         <div id="lap">
             <button class="lap">LAP</button>
+            <div class="lapdisplay"></div>
         </div>
     </div>
+    <script src="logic.js"></script>
 </body>
 </html>
