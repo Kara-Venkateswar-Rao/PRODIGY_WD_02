@@ -2,7 +2,7 @@
  margin: 0;
 padding: 0;
 box-sizing: border-box;
-}
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 
 html, body{
  width: 100%;
@@ -108,4 +108,31 @@ button::selection{
    display: none;
    font-size: 15px;
     font-weight: 600;
+}
+@media (max-width:680px) {
+    #stopwatch{
+        width: 90vw;
+    }
+    #timer{
+        width: 90vw;
+        height: 150px;
+    }
+    #timer div{
+        font-size: 55px;
+    }
+    #timer p{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    #buttons{
+        width: 90vw;
+    }
+    #buttons .start{
+        font-size: 12px;
+        padding: 0px 15px;
+    }
+    #buttons .reset{
+        font-size: 12px;
+        padding: 0px 15px;
+    }
 }
